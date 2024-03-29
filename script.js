@@ -1,5 +1,10 @@
 const extendHex = (shortHex) => {
-  // write your code here
+  let newStr = "#";
+	for(let a in shortHex){
+		if(shortHex[a] === "#") continue;
+		newStr = newStr+shortHex[a]+shortHex[a];
+	}
+	return newStr
 };
 
 // Do not change the code below.
